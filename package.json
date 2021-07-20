@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-roboleary",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "My stylelint config for linting CSS and SCSS. I use this along side Prettier, a config is included to disable any conflicting rules.",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,7 @@
     "stylelint-scss": "^3.20.1"
   },
   "dependencies": {
+    "stylelint-config-idiomatic-order": "^8.1.0",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^22.0.0"
   }
