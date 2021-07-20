@@ -1,0 +1,28 @@
+{
+  "name": "stylelint-config-roboleary",
+  "version": "0.0.1",
+  "description": "My stylelint config for linting CSS and SCSS. I use this along side Prettier, a config is included to disable any conflicting rules.",
+  "main": "index.js",
+  "scripts": {
+    "stylelint-check": "stylelint-config-prettier-check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robole/stylelint-config-roboleary.git"
+  },
+  "author": "rob oleary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robole/stylelint-config-roboleary/issues"
+  },
+  "homepage": "https://github.com/robole/stylelint-config-roboleary#readme",
+  "peerDependencies": {
+    "stylelint": ">=13",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.20.1"
+  },
+  "dependencies": {
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^22.0.0"
+  }
+}
