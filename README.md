@@ -8,7 +8,8 @@ It includes the following:
 - The [stylelint-scss](https://github.com/kristerkari/stylelint-scss) plugin to add more specific rules for SCSS (stylelint supports SCSS syntax by default).
 - The [stylelint-order](https://github.com/hudochenkov/stylelint-order) plugin to order properties, used in conjunction with the rules contained in [stylelint-config-idiomatic-order](https://github.com/ream88/stylelint-config-idiomatic-order) config.
 - The [stylelint-color-format](https://github.com/filipekiss/stylelint-color-format) plugin to format all colors as [HSLA](https://www.w3schools.com/csSref/func_hsla.asp). The color is set as HSL if opacity is 100%.
-- The [stylelint-a11y](https://github.com/YozhikM/stylelint-a11y) plugin to raise accessibility issues.
+- The [stylelint-declaration-block-no-ignored-properties](https://github.com/kristerkari/stylelint-declaration-block-no-ignored-properties) checks for property values that are ignored due to another property value in the same rule e.g. using `display: inline` with `width` or `height`.
+- The [stylelint-a11y](https://github.com/YozhikM/stylelint-a11y) plugin to raise some accessibility issues.
 
 ## Rules changed
 
@@ -22,7 +23,7 @@ It includes the following:
 
 ## Usage
 
-1. Install with `npx install-peerdeps --dev stylelint-config-roboleary` to install this package along with *stylelint* (it is a peer dependency).
+1. Install this package along with *stylelint* (peer dependency) `npx install-peerdeps --dev stylelint-config-roboleary` as *devDependencies*.
 1. Create a stylelint config in your project directory e.g. *.stylelintrc*. Add the following to the file:
 
 	```json
@@ -42,4 +43,27 @@ It includes the following:
    }
    ```
 
-1. Additionally, there are [integrations for code editors](https://stylelint.io/user-guide/integrations/editor). I use the [stylint extension](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) for VS Code.
+1. Additionally, there are [integrations for code editors](https://stylelint.io/user-guide/integrations/editor). I use the [stylelint extension](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) for VS Code.
+
+## Configuration in VS Code
+
+If you want to use stylelint and Prettier in VS Code, I recommend installing these 3 extensions: [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint), [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode), and [Format Code Action](https://marketplace.visualstudio.com/items?itemName=rohit-gohri.format-code-action&ssr=false#review-details) to enable Prettier to be run as a code action.
+
+To format and lint CSS/SCSS code on save, you can update your user settings with the following:
+
+```json
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": [
+    "source.formatDocument",
+    "source.fixAll"
+  ],
+}
+```
+
+## Show gratitude
+
+If this helped you, please star the repo to help others find it. 🌟
+
+You can [make a donation](https://ko-fi.com/roboleary) to enable me to make more great open-source software and tutorials. ☕🙏
