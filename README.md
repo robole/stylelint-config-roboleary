@@ -1,6 +1,6 @@
 # stylelint-config-roboleary
 
-My stylelint config for linting CSS and SCSS, and enables use of Prettier without conflicts.
+My stylelint config for linting CSS and SCSS. You can use it along side Prettier without conflicts.
 
 It includes the following:
 - The [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard) config gives a core collection of rules (extending [stylelint-config-recommended](https://github.com/stylelint/stylelint-config-recommended)). It is based on the common stylistic conventions found within a handful of CSS styleguides, including: The Idiomatic CSS Principles, Google's CSS Style Guide, Airbnb's Styleguide, and @mdo's Code Guide.
@@ -36,7 +36,7 @@ It includes the following:
    ```json
    {
         "scripts": {
-          "style-lint": "stylelint **/*.{css, scss}",
+          "style-lint": "stylelint **/*.{css,scss}",
           "style-lint:fix": "npm run style-lint -- --fix",
         }
    }
