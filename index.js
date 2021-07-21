@@ -9,10 +9,9 @@ module.exports = {
   ],
   plugins: ["stylelint-scss", "stylelint-order", "stylelint-color-format"],
   rules: {
-    "declaration-colon-newline-after": null,
-    "value-list-comma-newline-after": null,
     "color-format/format": {
       format: "hsla",
     },
+    "a11y/media-prefers-reduced-motion": null,
   },
 };
