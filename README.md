@@ -4,12 +4,12 @@ My stylelint config for linting CSS and SCSS. You can use it along side Prettier
 
 It includes the following:
 - The [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard) config gives a core collection of rules (extending [stylelint-config-recommended](https://github.com/stylelint/stylelint-config-recommended)). It is based on the common stylistic conventions found within a handful of CSS styleguides, including: The Idiomatic CSS Principles, Google's CSS Style Guide, Airbnb's Styleguide, and @mdo's Code Guide.
-- The [stylelint-config-prettier](https://github.com/prettier/stylelint-config-prettier) to disable any conflicting rules with Prettier.
 - The [stylelint-scss](https://github.com/kristerkari/stylelint-scss) plugin to add more specific rules for SCSS (stylelint supports SCSS syntax by default).
 - The [stylelint-order](https://github.com/hudochenkov/stylelint-order) plugin to order properties, used in conjunction with the rules contained in [stylelint-config-idiomatic-order](https://github.com/ream88/stylelint-config-idiomatic-order) config.
 - The [stylelint-color-format](https://github.com/filipekiss/stylelint-color-format) plugin to format all colors as [HSLA](https://www.w3schools.com/csSref/func_hsla.asp). The color is set as HSL if opacity is 100%.
 - The [stylelint-declaration-block-no-ignored-properties](https://github.com/kristerkari/stylelint-declaration-block-no-ignored-properties) checks for property values that are ignored due to another property value in the same rule e.g. using `display: inline` with `width` or `height`.
 - The [stylelint-a11y](https://github.com/YozhikM/stylelint-a11y) plugin to raise some accessibility issues.
+- The [stylelint-config-prettier](https://github.com/prettier/stylelint-config-prettier) to disable any conflicting rules with Prettier. This should always be the last referenced config, so that it's rules are not overwritten.
 
 ## Rules changed
 
@@ -66,4 +66,4 @@ To format and lint CSS/SCSS code on save, you can update your user settings with
 
 If this helped you, please star the repo to help others find it. 🌟
 
-You can [make a donation](https://ko-fi.com/roboleary) to enable me to make more great open-source software and tutorials. ☕🙏
+You can [make a donation](https://ko-fi.com/roboleary) to enable me to make more great open-source software and tutorials. 🙏
