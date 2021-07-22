@@ -3,7 +3,6 @@ const { propertyOrdering } = require("stylelint-semantic-groups");
 module.exports = {
   extends: [
     "stylelint-config-standard",
-    "stylelint-config-idiomatic-order",
     "stylelint-a11y/recommended",
     "stylelint-config-prettier",
   ],
