@@ -5,7 +5,7 @@ My stylelint config for linting CSS and SCSS. You can use it along side Prettier
 It includes the following:
 - The [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard) config gives a core collection of rules (extending [stylelint-config-recommended](https://github.com/stylelint/stylelint-config-recommended)). It is based on the common stylistic conventions found within a handful of CSS styleguides, including: The Idiomatic CSS Principles, Google's CSS Style Guide, Airbnb's Styleguide, and @mdo's Code Guide.
 - The [stylelint-scss](https://github.com/kristerkari/stylelint-scss) plugin to add more specific rules for SCSS (stylelint supports SCSS syntax by default).
-- The [stylelint-order](https://github.com/hudochenkov/stylelint-order) plugin to order properties into groups, used in conjunction with the rules contained in the [stylelint-semantic-groups](https://github.com/theKashey/stylelint-semantic-groups) config.
+- The [stylelint-order](https://github.com/hudochenkov/stylelint-order) plugin to order properties into groups, used in conjunction with the rules contained in [stylelint-config-idiomatic-order](https://github.com/ream88/stylelint-config-idiomatic-order).
 - The [stylelint-color-format](https://github.com/filipekiss/stylelint-color-format) plugin to format all colors as [HSLA](https://www.w3schools.com/csSref/func_hsla.asp). The color is set as HSL if opacity is 100%.
 - The [stylelint-declaration-block-no-ignored-properties](https://github.com/kristerkari/stylelint-declaration-block-no-ignored-properties) checks for property values that are ignored due to another property value in the same rule e.g. using `display: inline` with `width` or `height`.
 - The [stylelint-a11y](https://github.com/YozhikM/stylelint-a11y) plugin to raise some accessibility issues.
@@ -20,10 +20,6 @@ It includes the following:
 ### [stylelint-a11y](https://github.com/YozhikM/stylelint-a11y)
 
 - [`a11y/media-prefers-reduced-motion`](https://github.com/YozhikM/stylelint-a11y/blob/master/src/rules/media-prefers-reduced-motion/README.md): Require that an animation or transition has an accompanying media *prefers-reduced-motion* media query that disables it (Autofixable). **Turned off**, being autofixable is more disruptive than useful unfortunately.
-
-### [stylelint-semantic-groups](https://github.com/theKashey/stylelint-semantic-groups)
-
-- `order/order`: Sorts SCSS/CSS variables first, the 7 main groups next, then the at-rules and nested rules.
 
 ## Usage
 
