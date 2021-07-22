@@ -1,4 +1,4 @@
-"use strict";
+const { propertyOrdering } = require("stylelint-semantic-groups");
 
 module.exports = {
   extends: [
@@ -18,5 +18,13 @@ module.exports = {
       format: "hsla",
     },
     "a11y/media-prefers-reduced-motion": null,
+    "order/order": [
+      "custom-properties",
+      "dollar-variables",
+      "declarations",
+      "at-rules", // <-- important, `@media` should go before `&:pseudo`
+      "rules",
+    ],
+    "order/properties-order": propertyOrdering,
   },
 };
