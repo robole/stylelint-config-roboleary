@@ -13,6 +13,10 @@ It includes the following:
 
 ## Rules changed
 
+### [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard)
+
+- [`declaration-empty-line-before`](https://stylelint.io/user-guide/rules/list/declaration-empty-line-before/): Effectively turn off the rule through ignore option. This clears the way for the ordering plugin to add blank lines.
+
 ### [stylelint-color-format](https://github.com/filipekiss/stylelint-color-format)
 
 - [`color-format/format`](https://github.com/filipekiss/stylelint-color-format#configuration-1):  Convert HEX colors to either RGB or HSL formats. **Set to `hsla`**.
@@ -20,6 +24,16 @@ It includes the following:
 ### [stylelint-a11y](https://github.com/YozhikM/stylelint-a11y)
 
 - [`a11y/media-prefers-reduced-motion`](https://github.com/YozhikM/stylelint-a11y/blob/master/src/rules/media-prefers-reduced-motion/README.md): Require that an animation or transition has an accompanying media *prefers-reduced-motion* media query that disables it (Autofixable). **Turned off**, being autofixable is more disruptive than useful unfortunately.
+
+### [stylelint-declaration-block-no-ignored-properties](https://github.com/kristerkari/stylelint-declaration-block-no-ignored-properties)
+
+- `plugin/declaration-block-no-ignored-properties`: This rule needs to be **set to `true` to enable the plugin**.
+
+### [stylelint-a11y](https://github.com/YozhikM/stylelint-a11y)
+
+- [no-display-none](https://github.com/YozhikM/stylelint-a11y/blob/HEAD/src/rules/no-display-none/README.md): Disallow content hiding with `display: none` property. **Set to `true` to enable rule.**
+- [no-obsolete-attribute](https://github.com/YozhikM/stylelint-a11y/blob/HEAD/src/rules/no-obsolete-attribute/README.md): **Set to `true` to enable rule.**
+- [no-obsolete-element](https://github.com/YozhikM/stylelint-a11y/blob/HEAD/src/rules/no-obsolete-element/README.md): **Set to `true` to enable rule.**
 
 ## Usage
 
@@ -37,8 +51,8 @@ It includes the following:
    ```json
    {
         "scripts": {
-          "style-lint": "stylelint **/*.{css,scss}",
-          "style-lint:fix": "npm run style-lint -- --fix",
+          "lint": "stylelint **/*.{css,scss}",
+          "lint:fix": "npm run style-lint -- --fix",
         }
    }
    ```
