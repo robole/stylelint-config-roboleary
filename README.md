@@ -37,7 +37,7 @@ It includes the following:
 
 ## Usage
 
-1. Install this package along with *stylelint* (peer dependency) `npx install-peerdeps --dev stylelint-config-roboleary` as *devDependencies*.
+1. Install this package along with *stylelint* `npm install --save-dev stylelint-config-roboleary stylelint` as *devDependencies*.
 1. Create a stylelint config in your project directory e.g. *.stylelintrc*. Add the following to the file:
 
 	```json
