@@ -1,7 +1,6 @@
 module.exports = {
   extends: [
     "stylelint-config-standard",
-    "stylelint-a11y/recommended",
     "stylelint-config-idiomatic-order",
     "stylelint-config-prettier",
   ],
@@ -15,7 +14,6 @@ module.exports = {
     "color-format/format": {
       format: "hsla",
     },
-    "a11y/media-prefers-reduced-motion": null,
     "plugin/declaration-block-no-ignored-properties": true,
     "declaration-empty-line-before": [
       "always",
@@ -28,9 +26,5 @@ module.exports = {
         ],
       },
     ],
-    "a11y/no-display-none": true,
-    "a11y/no-text-align-justify": true,
-    "a11y/no-obsolete-attribute": true,
-    "a11y/no-obsolete-element": true,
   },
 };

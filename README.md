@@ -8,7 +8,6 @@ It includes the following:
 - The [stylelint-order](https://github.com/hudochenkov/stylelint-order) plugin to order properties into groups, used in conjunction with the rules contained in [stylelint-config-idiomatic-order](https://github.com/ream88/stylelint-config-idiomatic-order).
 - The [stylelint-color-format](https://github.com/filipekiss/stylelint-color-format) plugin to format all colors as [HSLA](https://www.w3schools.com/csSref/func_hsla.asp). The color is set as HSL if opacity is 100%.
 - The [stylelint-declaration-block-no-ignored-properties](https://github.com/kristerkari/stylelint-declaration-block-no-ignored-properties) checks for property values that are ignored due to another property value in the same rule e.g. using `display: inline` with `width` or `height`.
-- The [stylelint-a11y](https://github.com/YozhikM/stylelint-a11y) plugin to raise some accessibility issues.
 - The [stylelint-config-prettier](https://github.com/prettier/stylelint-config-prettier) to disable any conflicting rules with Prettier. This should always be the last referenced config, so that it's rules are not overwritten.
 
 ## Rules changed
@@ -28,12 +27,6 @@ It includes the following:
 ### [stylelint-declaration-block-no-ignored-properties](https://github.com/kristerkari/stylelint-declaration-block-no-ignored-properties)
 
 - `plugin/declaration-block-no-ignored-properties`: This rule needs to be **set to `true` to enable the plugin**.
-
-### [stylelint-a11y](https://github.com/YozhikM/stylelint-a11y)
-
-- [no-display-none](https://github.com/YozhikM/stylelint-a11y/blob/HEAD/src/rules/no-display-none/README.md): Disallow content hiding with `display: none` property. **Set to `true` to enable rule.**
-- [no-obsolete-attribute](https://github.com/YozhikM/stylelint-a11y/blob/HEAD/src/rules/no-obsolete-attribute/README.md): **Set to `true` to enable rule.**
-- [no-obsolete-element](https://github.com/YozhikM/stylelint-a11y/blob/HEAD/src/rules/no-obsolete-element/README.md): **Set to `true` to enable rule.**
 
 ## Usage
 
@@ -78,6 +71,6 @@ To format and lint CSS/SCSS code on save, you can update your user settings with
 
 ## Show gratitude
 
-If this helped you, please star the repo to help others find it. 🌟
+If this helped you, please [star the repo](https://github.com/robole/stylelint-config-roboleary/) to help others find it. 🌟
 
-You can [make a donation](https://ko-fi.com/roboleary) to enable me to make more great open-source software and tutorials. 🙏
+You can [make a donation](https://ko-fi.com/roboleary) to support me to make more great open-source software and tutorials. 🙏
