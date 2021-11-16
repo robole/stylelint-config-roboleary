@@ -20,10 +20,6 @@ It includes the following:
 
 - [`color-format/format`](https://github.com/filipekiss/stylelint-color-format#configuration-1):  Convert HEX colors to either RGB or HSL formats. **Set to `hsla`**.
 
-### [stylelint-a11y](https://github.com/YozhikM/stylelint-a11y)
-
-- [`a11y/media-prefers-reduced-motion`](https://github.com/YozhikM/stylelint-a11y/blob/master/src/rules/media-prefers-reduced-motion/README.md): Require that an animation or transition has an accompanying media *prefers-reduced-motion* media query that disables it (Autofixable). **Turned off**, being autofixable is more disruptive than useful unfortunately.
-
 ### [stylelint-declaration-block-no-ignored-properties](https://github.com/kristerkari/stylelint-declaration-block-no-ignored-properties)
 
 - `plugin/declaration-block-no-ignored-properties`: This rule needs to be **set to `true` to enable the plugin**.
